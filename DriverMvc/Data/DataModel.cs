@@ -5,9 +5,9 @@ public class DataModel
     
 }
 
-public class User
+public class Driver
 {
-    public User()
+    public Driver()
     {
         Username = string.Empty;
         Password = string.Empty;
@@ -17,5 +17,5 @@ public class User
     public string Password { get; set; }
     public bool IsManager { get; set; }
     public bool IsDriver { get; set; }
-    public bool IsAuthorizedAsDriver { get; set; }
+    
 }

@@ -10,7 +10,7 @@ namespace DriverMvc.Data
         {
         }
 
-        public DbSet<User> Users { get; set; }
+        public DbSet<Driver> Drivers { get; set; }
         // Add other DbSets for your other entities
     }
 }

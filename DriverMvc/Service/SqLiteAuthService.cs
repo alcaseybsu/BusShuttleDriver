@@ -15,23 +15,22 @@ public class SqLiteAuthService : IAuthenticationService
     // Auth logic
     public bool Authenticate(string username, string password)
     {
-        PrintAllUsers();
+        PrintAllDrivers();
         Console.WriteLine("authenticate hit at sqlite auth");
         // Query the database to check if username and password match
-        var user = _dbContext.Users.FirstOrDefault(u => u.Username == username && u.Password == password);
-        Console.WriteLine("User " + user);
-        return user != null;
+        var driver = _dbContext.Drivers.FirstOrDefault(u => u.Username == username && u.Password == password);
+        Console.WriteLine("Driver" + driver);
+        return driver != null;
     }
 
     // For testing: 
-    public void PrintAllUsers()
+    public void PrintAllDrivers()
     {
-        var users = _dbContext.Users.ToList();
+        var drivers = _dbContext.Drivers.ToList();
 
-        // Print details of all users
-        foreach (var user in users)
+        // Print details of all drivers
         {
-            Console.WriteLine($"User ID: {user.Id}, Username: {user.Username}, Password: {user.Password}, IsManager: {user.IsManager}, IsDriver: {user.IsDriver}");
+            Console.WriteLine($"Driver ID: {driver.Id}, Username: {driver.Username}, Password: {driver.Password}, IsManager: {driver.IsManager}, IsDriver: {driver.IsDriver}");
         }
     }
 }

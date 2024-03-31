@@ -8,7 +8,7 @@ namespace DriverMvc.Controllers
     public class HomeController : Controller
     {
         private readonly IAuthenticationService _authenticationService;
-        private readonly ILogger<HomeController> _logger; // Fixed the duplicate declaration here
+        private readonly ILogger<HomeController> _logger; 
 
         public HomeController(IAuthenticationService authenticationService, ILogger<HomeController> logger)
         {
