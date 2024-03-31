@@ -1,0 +1,14 @@
+@model DriverMvc.Models.User
+
+@using (Html.BeginForm("Login", "Home", FormMethod.Post))
+{
+    @Html.LabelFor(m => m.Username)
+    @Html.TextBoxFor(m => m.Username)
+    @Html.ValidationMessageFor(m => m.Username)
+
+    @Html.LabelFor(m => m.Password)
+    @Html.PasswordFor(m => m.Password)
+    @Html.ValidationMessageFor(m => m.Password)
+
+    <input type="submit" value="Login" />
+}

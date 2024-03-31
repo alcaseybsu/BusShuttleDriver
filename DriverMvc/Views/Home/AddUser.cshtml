@@ -1,0 +1,23 @@
+@model DriverMvc.Models.User
+
+<h2>Add User</h2>
+
+<form method="POST">
+    <div>
+        <label for="username">Username:</label>
+        <input id="username" type="text" name="Username" required />
+    </div>
+    <div>
+        <label for="password">Password:</label>
+        <input id="password" type="password" name="Password" required />
+    </div>
+    <div>
+        <label for="isManager">Is Manager:</label>
+        <input id="isManager" type="checkbox" name="IsManager" />
+    </div>
+    <div>
+        <label for="isDriver">Is Driver:</label>
+        <input id="isDriver" type="checkbox" name="IsDriver" />
+    </div>    
+    <button type="submit">Add User</button>
+</form>

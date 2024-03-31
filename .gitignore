@@ -184,3 +184,6 @@ publish/
 *.azurePubxml
 # Note: Comment the next line if you want to checkin your web deploy settings,
 # but database connection strings (with poten
+
+// Ignore .DS_Store files
+/.DS_Store
